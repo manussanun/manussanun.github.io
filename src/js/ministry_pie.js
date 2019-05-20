@@ -34,6 +34,6 @@ function drawChart() {
 
     data.sort([{ column: 1 }]);
 
-    var chart = new google.visualization.PieChart(document.getElementById('country_pie'));
+    var chart = new google.visualization.PieChart(document.getElementById('ministry_pie'));
     chart.draw(data, options);
 }

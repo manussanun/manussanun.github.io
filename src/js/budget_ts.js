@@ -9,6 +9,7 @@ function drawCurveTypes() {
     data.addColumn('number', 'กระทรวงการคลัง');
     data.addColumn('number', 'กระทรวงการท่องเที่ยวและกีฬา');
     data.addColumn('number', 'กระทรวงการพัฒนาสังคมและความมั่นคงของมนุษย์');
+    data.addColumn('number', 'กระทรวงเกษตรและสหกรณ์');
     data.addColumn('number', 'กระทรวงคมนาคม');
     data.addColumn('number', 'กระทรวงดิจิทัลเพ่ือเศรษฐกิจและสังคม');
     data.addColumn('number', 'กระทรวงพลังงาน');
