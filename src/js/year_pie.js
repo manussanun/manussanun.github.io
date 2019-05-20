@@ -1,4 +1,4 @@
-google.charts.load("current", { packages: ["corechart"] });
+google.charts.load('42', { 'packages': ['bar'] });
 google.charts.setOnLoadCallback(drawChart);
 
 function drawChart() {
@@ -21,14 +21,26 @@ function drawChart() {
         ['2561',5445794912],
         ['2562',5654209034]
     ]);
-
     var options = {
-        title: 'งบประมาณแบ่งตามปี',
-        pieHole: 0.5
-    };
+            chart: {
+                title: 'งบประมาณแต่ละปี',
+                subtitle: 'ย้อนหลังปี พ.ศ.2547 - พ.ศ.2562'
+            },
+            width: 900,
+            height: 500
+        };
 
-    data.sort([{ column: 1 }]);
+        var chart = new google.charts.Bar(document.getElementById('year_pie'));
 
-    var chart = new google.visualization.PieChart(document.getElementById('year_pie'));
-    chart.draw(data, options);
+        chart.draw(data, google.charts.Bar.convertOptions(options));
 }
+//     var options = {
+//         title: 'งบประมาณแบ่งตามปี',
+//         pieHole: 0.5
+//     };
+//
+//     data.sort([{ column: 1 }]);
+//
+//     var chart = new google.visualization.PieChart(document.getElementById('year_pie'));
+//     chart.draw(data, options);
+// }
